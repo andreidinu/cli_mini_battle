@@ -14,7 +14,7 @@ target = open('log.txt', 'w')
 if player_1 == 1:
     print('Player 1 has chosen Rogue.')
     target.write('Player 1 has chosen Rogue.\n')
-    rogue_1 = fighters.Rogue(10, 9, 3, False)
+    rogue_1 = fighters.Rogue(30, 15, 3, False)
     player_1 = rogue_1
 
 elif player_1 == 2:
