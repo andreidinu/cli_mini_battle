@@ -1,0 +1,14 @@
+Player 1 has chosen Rogue.
+Player 2 has chosen Shaman.
+Player 1 attacks Player 2 for 3 damage.
+Player 2 attacks Player 1 for 3 damage.
+Player 1 attacks Player 2 for 3 damage.
+Player 2 stands. His HP and Stamina will regenerate.
+Player 1 stands. His HP and Stamina will regenerate.
+Player 2 stands. His HP and Stamina will regenerate.
+Player 1 got the bonus!
+Player 1 attacks Player 2 for 3 damage.
+Player 2 uses his special ability to attack Player 1 for 9 damage.
+Player 1 attacks Player 2 for 3 damage.
+Player 2 attacks Player 1 for 3 damage.
+Player 1 has no more life. Player 2 wins!
