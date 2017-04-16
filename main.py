@@ -13,7 +13,7 @@ def round_four(round_number):
         player[1].special = False
 
     if player[0].special is True:
-        if 0.0 <= random.random() < 0.5:
+        if 0.0 <= random.random() < 0.50:
             print('Player 1 got the bonus!')
             target.write('Player 1 got the bonus!\n')
             player[0].bonus()
@@ -29,12 +29,14 @@ def check_options(turn):
         print("1. Attack")
         print("2. Special Ability")
         print("3. Stand Still")
+        return 1, 2, 3
     elif 3 <= player[turn].stamina < 8:
         print('1. Attack')
         print('3. Stand Still')
+        return 1, 3
     else:
         print('3. Stand Still')
-
+        return 3
 
 def print_status():
     print('\nPlayer 1: \n' + 'HP:', player[0].hp, '\nStamina:', player[0].stamina)
@@ -43,6 +45,15 @@ def print_status():
 
 def player_turn(turn):
     inp = int(input())
+    try:
+        while inp not in check_options(turn):
+            print("Choose one of available options!")
+            inp = int(input())
+    except TypeError:
+        while inp != check_options(turn):
+            print("Choose one of tha available options!")
+            inp = int(input())
+
     if inp == 1:
             target.write('Player ' + str((turn + 1)) + ' attacks Player ' + str(((turn + 1) % 2 + 1)) + ' for {} '.format(player[turn % 2].attack) + ' damage.\n')
             player[(turn + 1) % 2].hp -= player[turn % 2].attack
