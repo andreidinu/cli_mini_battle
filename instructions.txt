@@ -4,6 +4,7 @@ You will have to choose between 5 classes of fighters, each one with its particu
 points. Your character will start with full HP and Stamina and will lose then in consequence with
 your actions. When it's your turn you can either attack (costs stamina), use your special ability
 (uses more stamina) or stand still (will recharge your HP and Stamina).
+
 Every 4 rounds your hero will have a 50% chance to take the bonus.
 
 Each class has it's own unique ability on bonus.
